@@ -14,7 +14,7 @@ export default class Start extends Phaser.Scene {
     );
     this.load.html("usernameInput", "start.html");
     this.load.image("logo", "assets/ClubDinoLogo.png");
-    this.load.audio('bgm', 'assets/04_sleeping_on_the_susuki_grasslands.ogg')
+    this.load.audio('bgm', 'assets/stevia-sphere-chiptune-no-copyright-music.mp3')
   }
 
   init () {
@@ -38,7 +38,7 @@ export default class Start extends Phaser.Scene {
 
   create() {
     this.bgm = this.sound.add('bgm');
-    this.bgm.play({loop: true, mute: false, seek: 10000, pauseOnBlur: false, volume: 0.5});
+    this.bgm.play({loop: true, pauseOnBlur: false, volume: 0.05});
     this.prepareCharacterAnimation();
     const scene = this;
     this.logo = this.add.image(this.cameras.main.width/2, 200, "logo").setOrigin(0.5);
