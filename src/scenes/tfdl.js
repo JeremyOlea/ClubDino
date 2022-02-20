@@ -112,8 +112,6 @@ export default class TFDL extends Phaser.Scene {
       !Phaser.Geom.Intersects.RectangleToRectangle(boundsPlayer, boundsPanel)
     ) {
       scene.deactivateControlPanel(controlPanel);
-
-      
       return false;
       
     } else {
@@ -564,32 +562,84 @@ export default class TFDL extends Phaser.Scene {
         this
       );
       //CONTROL PANEL: NOT OVERLAPPED
-      if (
-        scene.checkOverlap(
-          scene,
-          scene.astronaut,
-          scene.pinpongTable,
-          "PPMain"
-        ) ||
-        scene.checkOverlap(
-          scene,
-          scene.astronaut,
-          scene.specialComputer,
-          "SpaceInvaders"
-        ) ||
-        scene.checkOverlap(scene, scene.astronaut, scene.studyDesk, "Idle")
-      ) {
+      if (scene.checkOverlap(scene, scene.astronaut, scene.pinpongTable, "PPMain")) {
         scene.startGameButton.setVisible(true);
+        this.startGameButton.off("pointerdown");
         this.startGameButton.setInteractive().on("pointerdown", () => {
           scene.startGameButton.setVisible(false);
-          scene.scene.launch(this.currentGame, {
+          scene.scene.launch("PPMain", {
             ...scene.scene,
             socket: scene.socket,
           });
+          this.physics.pause();
+        });
+      } else if (
+      scene.checkOverlap(
+        scene,
+        scene.astronaut,
+        scene.specialComputer,
+        "SpaceInvaders"
+      )) {
+        scene.startGameButton.setVisible(true);
+        this.startGameButton.off("pointerdown");
+        this.startGameButton.setInteractive().on("pointerdown", () => {
+          scene.startGameButton.setVisible(false);
+          scene.scene.launch("SpaceInvaders", {
+            ...scene.scene,
+            socket: scene.socket,
+          });
+          this.physics.pause();
+        });
+
+      } else if (
+      scene.checkOverlap(
+        scene,
+        scene.astronaut,
+        scene.studyDesk,
+        "Idle"
+      )) {
+        scene.startGameButton.setVisible(true);
+        this.startGameButton.off("pointerdown");
+        this.startGameButton.setInteractive().on("pointerdown", () => {
+          scene.startGameButton.setVisible(false);
+          scene.scene.launch("Idle", {
+            ...scene.scene,
+            socket: scene.socket,
+          });
+          this.physics.pause();
         });
       } else {
+        // console.log('no overlap');
+        console.log(this.startGameButton.listenerCount("pointerdown"));
+        this.startGameButton.off("pointerdown");
         scene.startGameButton.setVisible(false);
       }
+      // if (
+      //   scene.checkOverlap(
+      //     scene,
+      //     scene.astronaut,
+      //     scene.pinpongTable,
+      //     "PPMain"
+      //   ) ||
+      //   scene.checkOverlap(
+      //     scene,
+      //     scene.astronaut,
+      //     scene.specialComputer,
+      //     "SpaceInvaders"
+      //   ) ||
+      //   scene.checkOverlap(scene, scene.astronaut, scene.studyDesk, "Idle")
+      // ) {
+      //   scene.startGameButton.setVisible(true);
+      //   this.startGameButton.setInteractive().on("pointerdown", () => {
+      //     scene.startGameButton.setVisible(false);
+      //     scene.scene.launch(this.currentGame, {
+      //       ...scene.scene,
+      //       socket: scene.socket,
+      //     });
+      //   });
+      // } else {
+      //   scene.startGameButton.setVisible(false);
+      // }
     }
   }
 }
