@@ -1,5 +1,7 @@
 # ClubDino
-CalgaryHacks 2022
+Created for CalgaryHacks 2022
+Won Best UX/UI Design
+https://devpost.com/software/club-dino
 ## Inspiration
 We all loved online web MMOs as kids - Club Penguin, Habbo Hotel, the list goes on! They were representative of a simpler time, where you could hop on, meet your friends, make new ones, and play fun games. 
 
