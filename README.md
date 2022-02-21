@@ -24,4 +24,14 @@ Game development is very hard! (One of us had to label every frame of animation 
 - Character customization
 - Temporary buffs ("food") that recreate the Mac Hall Experience
 - More fun mini-games, like Wordle :)
-- Full account creation and signup
+- Full account creation and signup  
+  
+## Images  
+![Start Screen](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/ClubDinoStart.PNG)
+![Mac Hall](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_MacHall.PNG)
+![TFDL](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/ClubDinoStart.PNG)
+![Pong Start](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_PongStart.PNG)
+![Pong Game](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_Pong.PNG)
+![Space Invaders Start](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_SpaceStart.PNG)
+![Space Invaders](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_Space.PNG)
+![Study Timer](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_Study.PNG)
