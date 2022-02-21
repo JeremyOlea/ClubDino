@@ -28,8 +28,8 @@ Game development is very hard! (One of us had to label every frame of animation 
   
 ## Images  
 ![Start Screen](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/ClubDinoStart.PNG)
-![Mac Hall](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_MacHall.PNG)
-![TFDL](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_TFDL.PNG)
+![Mac Hall](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/ClubDino_MacHall.PNG)
+![TFDL](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/ClubDino_TFDL.PNG)
 ![Pong Start](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_PongStart.PNG)
 ![Pong Game](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_Pong.PNG)
 ![Space Invaders Start](https://github.com/JeremyOlea/ClubDino/blob/main/public/assets/screenshots/DinoClub_SpaceStart.PNG)
