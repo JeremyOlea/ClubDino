@@ -1,5 +1,5 @@
 # ClubDino
-Try it out: https://clubdino.herokuapp.com/
+Try it out: https://clubdino.herokuapp.com/  
 Devpost: https://devpost.com/software/club-dino
 - Created for CalgaryHacks 2022  
 - :trophy: Won Best UX/UI Design    
