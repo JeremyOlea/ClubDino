@@ -1,9 +1,8 @@
 # ClubDino
+Try it out: https://clubdino.herokuapp.com/
 Devpost: https://devpost.com/software/club-dino
 - Created for CalgaryHacks 2022  
 - :trophy: Won Best UX/UI Design    
-  
-Try it out: https://clubdino.herokuapp.com/  
 
 ## Inspiration
 We all loved online web MMOs as kids - Club Penguin, Habbo Hotel, the list goes on! They were representative of a simpler time, where you could hop on, meet your friends, make new ones, and play fun games. 
